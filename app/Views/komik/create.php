@@ -30,9 +30,12 @@
                 </div>
                 <div class=" row mb-3">
                     <label for="sampul" class="col-sm-2 col-form-label">Sampul</label>
-                    <div class="col-sm-10">
+                    <div class="col-sm-2">
+                        <img src="/img/default.png" class="img-thumbnail img-preview" alt="">
+                    </div>
+                    <div class="col-sm-8">
                         <div class="mb-3">
-                            <input class="form-control <?= ($validation->hasError('sampul')) ? 'is-invalid' : ''; ?>" type="file" id="sampul" name="sampul" multiple>
+                            <input class="form-control <?= ($validation->hasError('sampul')) ? 'is-invalid' : ''; ?>" type="file" id="sampul" name="sampul" onchange="previewImg()">
                             <div class="invalid-feedback">
                                 <?= $validation->getError('sampul'); ?>
                             </div>
