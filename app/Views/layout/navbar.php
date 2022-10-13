@@ -19,6 +19,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/komik/index">Komik</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/orang">Orang</a>
+                    </li>
                 </ul>
             </div>
         </div>
